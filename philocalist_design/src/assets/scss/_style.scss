@@ -119,10 +119,14 @@ footer {
         z-index: 10;
         position: relative;
         padding-left: 5px;
-        padding-right: 5px;
+        padding-right: 5px;/* 
         border-left: 1px solid black;
-        border-right: 1px solid black;
+        border-right: 1px solid black; */
         color: $black !important;
+    }
+    h3 {
+        font-size: 20px !important;
+        font-weight: 300 !important;
     }
 }
 .divider::before {
@@ -578,9 +582,6 @@ margin-bottom: 10px;
     }
     .about-us-wrapper {
         padding: 0px 7px !important;
-        h2 {
-            text-align: center;
-        }
     }
     .spacer-100 {
         margin-bottom: 50px !important;
@@ -796,7 +797,7 @@ margin-bottom: 10px;
         color: $black;
     }
     span {
-        font-size: 46px !important;
+        font-size: 36px !important;
         float: right;
         margin-right: 20px;
     }
@@ -813,6 +814,18 @@ margin-bottom: 10px;
 }
 .about-us-wrapper {
     padding: 100px 25px;
+    a {
+        color: black;
+        float: right;
+        margin-right: 40px;
+    }
+    a:hover {
+        font-weight: bold;
+        color: black;
+    }
+    h2 {
+        font-weight: lighter !important;
+    }
 }
 .navigation-bar {
     font-size: 12px;
