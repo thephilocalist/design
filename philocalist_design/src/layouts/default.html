@@ -79,8 +79,8 @@
         </ul>
       </div>
       <div class="column large-4 medium-3">
-        <ul class="menu fl-r">
-          <li><a><i class="fas fa-envelope"></i></a></li>
+        <ul class="menu fl-r"><!-- 
+          <li><a><i class="fas fa-envelope"></i></a></li> -->
           <li>
             <button class="button search-button" type="button" data-toggle="example-dropdown-bottom-right3"><i class="fas fa-search"></i></button>
             <div class="dropdown-pane bottom" data-alignment="right" id="example-dropdown-bottom-right3" data-dropdown>
@@ -174,7 +174,7 @@
     <script>
       /* Load More */
       $(function() {
-        $(".category-load").slice(0, 3).show(); // select the first ten
+        $(".category-load").slice(0, 2).show(); // select the first ten
         $("#load").click(function(e){ // click event for load more
           e.preventDefault();
           $(".category-load:hidden").slice(0, 2).show();
