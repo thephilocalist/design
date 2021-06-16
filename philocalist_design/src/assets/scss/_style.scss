@@ -538,7 +538,7 @@ margin-bottom: 10px;
     height: 600px;
     color: white;
     background-image: url('/assets/img/cover.png');
-    background-position:center;
+    background-position:top;
     background-size: cover;
     a {
         color: white !important;
@@ -909,6 +909,9 @@ margin-bottom: 10px;
     .spacer-90 {
         margin-bottom: 30px !important;
     }
+    .spacer-200 {
+        margin-bottom: 85px !important;
+    }
     .spacer-250 {
         margin-bottom: 125px !important;
     }
@@ -998,5 +1001,11 @@ margin-bottom: 10px;
 @media screen and (max-width: 39.99875em) {
     .w-60 {
         width: 80% !important;
+    }
+}
+/* Very Large  CSS*/
+@media screen and (min-width: 89.99875em) {
+    .spacer-200 {
+        margin-bottom: 300px !important;
     }
 }
