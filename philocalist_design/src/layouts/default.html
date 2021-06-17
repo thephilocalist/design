@@ -36,7 +36,7 @@
         <div class="off-canvas position-left" id="offCanvasMenu" data-off-canvas>
           <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
             <li><span data-toggle="offCanvasMenu" aria-hidden="true">×</span></li>
-            <li><a href="index.html"><img class="about-logo" src="/assets/img/logo_black.png"></a></li>
+            <li><a href="index.html"><img class="offcanva-logo" src="/assets/img/logo_black.png"></a></li>
             <li><a href="index.html">HOME</a></li>
             <li><a href="category.html">FASHION</a></li>
             <li><a href="category.html">LIFESTYLE</a></li>
@@ -59,32 +59,22 @@
 
     <!-- Start Sticky Navigation Menu -->
     <div class="sticky-navigation-bar show-for-medium">
-      <div class="column large-2 medium-1">
-        <ul class="menu vertical">
-          <li><a><i class="fa fa-bars f-s-16" data-toggle="offCanvasMenu" aria-hidden="true"></i></a></li><!-- 
-          <li><a href="index.html">THE PHILOCALIST</a></li> -->
-        </ul>
-      </div>
-      <div class="column large-6 medium-8">
-        <ul class="menu fl-r w-60">
-          <li><a href="category.html">FASHION</a></li>
-          <li><a href="category.html">LIFESTYLE</a></li>
-          <li><a href="category.html">TRAVEL</a></li>
-          <li><a href="category.html">STORY</a></li>
-        </ul>
-      </div>
-      <div class="column large-4 medium-3">
-        <ul class="menu fl-r"><!-- 
-          <li><a><i class="fas fa-envelope"></i></a></li> -->
-          <li>
-            <button class="button search-button" type="button" data-toggle="example-dropdown-bottom-right3"><i class="fas fa-search"></i></button>
-            <div class="dropdown-pane bottom" data-alignment="right" id="example-dropdown-bottom-right3" data-dropdown>
-              <input type="search" placeholder="Search Article..." data-auto-focus="true">
-            </div>
-          </li>
-        </ul>
-      </div>
-
+      <ul class="menu fl-l">
+        <li><a><i class="fa fa-bars f-s-16" data-toggle="offCanvasMenu" aria-hidden="true"></i></a></li><!-- 
+        <li><a href="index.html">THE PHILOCALIST</a></li> -->
+      </ul>
+      <ul class="menu">
+        <li class="m-l-auto"><a href="category.html">FASHION</a></li>
+        <li><a href="category.html">LIFESTYLE</a></li>
+        <li><a href="category.html">TRAVEL</a></li>
+        <li><a href="category.html">STORY</a></li>
+        <li class="m-l-auto">
+          <button class="button search-button" type="button" data-toggle="example-dropdown-bottom-right3"><i class="fas fa-search"></i></button>
+          <div class="dropdown-pane bottom" data-alignment="right" id="example-dropdown-bottom-right3" data-dropdown>
+            <input type="search" placeholder="Search Article..." data-auto-focus="true">
+          </div>
+        </li>
+      </ul>
     </div>
     <!-- End Sticky Navigation Menu -->
 
