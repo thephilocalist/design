@@ -149,6 +149,9 @@ li {
 .m-l-auto {
     margin-left: auto !important;
 }
+.m-r-auto {
+    margin-right: auto !important;
+}
 .m-b-10 {
     margin-bottom: 10px;
 }
@@ -536,12 +539,20 @@ margin-bottom: 10px;
     display: block;
 }
 .main-logo {
-    width: 200px;
+    width: 210px;
     height: 200px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    top: 10px;
 
+}
+.nav-logo {
+
+    img {
+        width: 130px;
+        height: 12px;
+    }
 }
 .category-photo-wrapper {
     position: absolute;
@@ -549,7 +560,7 @@ margin-bottom: 10px;
     width: 100%;
     height: 600px;
     color: white;    
-    background-position:top;
+    background-position: center;
     background-size: cover;
     text-align: center;
 
@@ -563,7 +574,7 @@ margin-bottom: 10px;
     width: 100%;
     height: 600px;
     color: white;
-    background-position:top;
+    background-position:center;
     background-size: cover;
     a {
         color: white !important;
