@@ -1,6 +1,6 @@
 <!-- Start Logo -->
 <div class="main-photo-wrapper" data-src="/assets/img/main_photo.jpg" style="background-image: url('/assets/img/main_photo.jpg');">
-  
+  <!-- 
   <img class="main-logo" src="/assets/img/logo_white.png">
   <ul class="menu custom menu-logo">
     <li><a class="p-l-r-29" href="category.html">FASHION</a></li>
@@ -8,14 +8,14 @@
     <li><a class="p-l-r-29" href="category.html">TRAVEL</a></li>
     <li><a class="p-l-r-29" href="category.html">STORY</a></li>
   </ul>
-</div>
+</div> -->
 <div class="clearfix"></div>
 <div class="spacer-600"></div>
 <div class="clearfix"></div>
 <!-- End Logo -->
 
 <!-- Start About -->
-<div class="about-us-wrapper">
+<!-- <div class="about-us-wrapper">
   <div class="row">
     <div class="columns small-12 medium-6">
       <div class="spacer-100 hide-for-medium"></div>
@@ -28,18 +28,27 @@
     </div>
   </div>
 </div>
-<div class="spacer-50"></div>
+<div class="spacer-50"></div> -->
 <!-- End About -->
+<div class="spacer-50"></div>
 
 <!-- Start Main Article Carousel -->
+<p class="carousel-title">FEATURED ARTICLES</p>
 <div class="owl-carousel owl-theme">
   <div> {{> _main-article}} </div>
   <div> {{> _main-article}} </div>
   <div> {{> _main-article}} </div>
   <div> {{> _main-article}} </div>
 </div>
+<div class="clearfix"></div>
 <div class="spacer-100"></div>
 <!-- End Main Article Carousel -->
+
+<!-- Start Philocalist Banner -->
+<div class="clearfix"></div>
+{{> _philocalist-banner}}
+<div class="spacer-100"></div>
+<!-- End Philocalist Banner -->
 
 <!-- Start - Category - Articles -->
 <div class="columns medium-10 medium-offset-1 small-12" data-equalizer>
@@ -132,10 +141,3 @@
   </div>
 </div>
 <!-- End Promoted Articles -->
-
-<!-- Start Newsletter Form -->
-<div class="clearfix"></div>
-<div class="row">  
-  {{> _subscribe-banner}}
-</div>
-<!-- End Newsletter Form -->

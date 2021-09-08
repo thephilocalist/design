@@ -78,7 +78,7 @@ html {
     width: fit-content;
 
     a {
-        font-size: 16px;
+        font-size: 24px;
     }
 }
 .owl-next span, .owl-prev span {
@@ -104,7 +104,7 @@ li {
     }
 }
 .search-button {
-    background-color: rgba($color: #000000, $alpha: 0.1) !important;
+    background-color: $white !important;
 }
 .float-right {
     float: right !important;
@@ -149,14 +149,28 @@ li {
 }
 .sticky-navigation-bar {
     display: none;
-    font-size: 14px;
-    background-color: $light-green;
-    box-shadow: 0px 0px 10px 1px rgba(10, 10, 10, 0.7);
+    font-size: 18px !important;
+    background-color: $white;
     z-index: 9;
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 15px 50px;
 
+    .fa-bars {
+        color: grey;
+        font-size: 28px !important;
+    }
+    .fa-search {
+        font-size: 22px !important;
+    }
+    .nav-logo {
+        font-size: 28px !important;
+        font-weight: bold;
+    }
+    .nav-logo:hover, .nav-logo:focus {
+        color: $black;
+    }
     i:hover {
         cursor: pointer;
     }
@@ -171,6 +185,9 @@ li {
         -ms-flex-pack: center;
         justify-content: center !important;
     }
+    i {
+        color: $black;
+    }
 }
 .m-auto {
     margin-left: auto !important;
@@ -182,8 +199,20 @@ li {
 .m-r-auto {
     margin-right: auto !important;
 }
+.m-l-0 {
+    margin-left: 0 !important;
+}
+.m-r-0 {
+    margin-right: 0 !important;
+}
 .m-b-10 {
     margin-bottom: 10px;
+}
+.m-t-5 {
+    margin-top: 5px;
+}
+.max-width {
+    width: fit-content;
 }
 a:focus {
     outline: none !important;
@@ -192,7 +221,6 @@ a:focus {
 footer {
     background-color: $menta;
     padding: 50px 50px 0px 50px ;
-    font-size: 12px;
      a {
         color: $black;
      }
@@ -200,13 +228,64 @@ footer {
         color: $black !important;
         text-decoration: none !important;
         opacity: 0.8;
-        font-weight: bolder;
+        font-weight: normal;
      }
      i:hover {
         font-weight: bolder;
      }
     .vertical.dropdown.menu.accordion-menu {
         text-align: center;
+    }
+
+    .rights {
+        font-size: 18px;
+    }
+    .subscribe-banner-container {    
+        h6 {
+            font-size: 44px;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        form {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 455px;
+
+            .newsletter-button {
+                color: $white;
+                font-weight: bolder;
+                font-size: 20px;
+                width: 120px;
+            }
+            input {
+                height: 54px;
+                width: 350px;
+                border: 1px solid rgb(10, 10, 10);            
+            }
+            input::placeholder {
+                color: $black;
+                opacity: 1;
+            }
+            p {
+                text-align: right;
+            }
+        }
+
+        .newsletter-button {
+            background-color: $black;
+            color: $white;
+        }
+
+        .newsletter-button:hover,.newsletter-button:focus {
+            background-color: $black;
+            color: $white;
+        }
+
     }
 }
 .text-center {
@@ -342,6 +421,28 @@ margin-bottom: 10px;
     }
 }
 .main-article {
+
+    a {
+        margin-bottom: 10px !important;
+    }
+    .text-wrapper {
+        text-align: center;
+        color: $black;
+        background-color: $white;
+
+        .category {
+            font-size: 10px;
+            margin-bottom: 0px;
+        }
+        .title {
+            font-size: 35px;
+            margin-bottom: 0px;
+        }
+        .date {
+            font-size: 13px;
+            margin-bottom: 0px;
+        }
+    }
     .main-article-box {
         display: block;
         float: left;
@@ -351,17 +452,6 @@ margin-bottom: 10px;
         background-repeat: no-repeat !important;
         background-size: cover !important;
         margin-bottom: 25px;
-
-        .text-wrapper {
-            position: absolute;
-            bottom: 0;
-            left: 20px;
-            color: white;
-            h2 {
-                font-size: 3rem;
-            }
-
-        }
 
         .overlay {
             display: grid;
@@ -576,11 +666,16 @@ margin-bottom: 10px;
     margin-top: 50px;
 
 }
-.nav-logo {
+.philocalist-banner-wrapper {
+    background-color: $menta;
+    height: 500px;
+    padding-top: 100px;
 
-    img {
-        width: 130px;
-        height: 12px;
+    .banner-logo {
+        width: 475px;
+        height: 300px;
+        margin: 0 auto;
+        display: block;
     }
 }
 .category-photo-wrapper {
@@ -595,18 +690,6 @@ margin-bottom: 10px;
 
     h1 {
         font-size: 32px;
-    }
-}
-.main-photo-wrapper {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 600px;
-    color: white;
-    background-position:center;
-    background-size: cover;
-    a {
-        color: white !important;
     }
 }
 .article-title-wrapper {
@@ -635,46 +718,6 @@ margin-bottom: 10px;
 .article-main-image {
     display: flex;
     margin: auto auto 100px auto ;
-}
-.subscribe-banner-container {
-    padding: 50px;
-    width: 100%;
-    font-size: 20px;
-    
-    form {
-        display: flex;
-
-        .newsletter-button {
-            margin-right: 50px;
-            color: $black;
-        }
-        input, button {
-            height: 50px;
-            width: 350px;
-        }
-        p {
-            text-align: right;
-        }
-    }
-
-    .newsletter-button {
-        background-color: #cfe2cf;
-        color: $white;
-    }
-
-    .newsletter-button:hover,.newsletter-button:focus {
-        background-color: $black;
-        color: $white;
-    }
-    h3 {
-        background-color: $black;
-        color: $white;
-        font-size: 14px !important;
-        text-align: center;
-        font-weight: bold;
-        padding: 10px;
-    }
-
 }
 .follow-banner-container {
     background-color: $white;
@@ -764,21 +807,33 @@ margin-bottom: 10px;
 }
 #offCanvasMenu {
 
+    display: flex;
+
     a, .fab, .fas, .fa {
         color: $black;
     }
     span {
-        font-size: 36px !important;
-        float: right;
-        margin-right: 20px;
+        font-size: 44px !important;
+        float: left;
+        margin-left: 20px;
     }
     span:hover{
         cursor: pointer;
     }
+    li a {
+        font-size: 16px;
+        color: gray;
+    }
+    li:first-child() a{
+        color: $black;
+    }
+
 }
 .off-canvas {
-    background-color: $light-green !important;
+    background-color: $white !important;
     font-size: 12px;
+    height: 100% !important;
+
     .dropdown-pane {
         width: 150px !important;
     }
@@ -793,8 +848,16 @@ margin-bottom: 10px;
 .m-0 {
     margin: 0px !important;
 }
+.carousel-title {
+    color: $black;
+    font-size: 24px;
+    width: 90%;
+    float: right;
+}
 .about-us-wrapper {
     padding: 100px 25px;
+    color: $black;
+
     a {
         color: black;
         float: right;
@@ -809,30 +872,48 @@ margin-bottom: 10px;
     }
 }
 .navigation-bar {
-    font-size: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99999;
-    
+
+    height: 150px;
+    color: $black;
+    background-color: $white;
+
+    h1{
+        font-size: 36px !important;
+        text-align: center;
+    }
+
     .menu a,button, i{
-        color: white;
+        color: $black;
     }
     .fa.fa-bars {
-        font-size: 16px;
+        font-size: 28px !important;
+        color: grey;
+        font-weight: bold;
     }
     .fa.fa-bars:hover {
-        cursor: pointer;
+        cursor: pointer;/* 
         font-weight: bolder;
-        box-shadow: 0px 0px 5px 1px rgba(10, 10, 10, 0.2);
+        box-shadow: 0px 0px 5px 1px rgba(10, 10, 10, 0.2); */
     }
     .fab, .fas {
-        font-size: 13px !important;
+        font-size: 22px !important;
     }
     .fab:hover, .fas:hover {
         font-weight: bolder;
         box-shadow: 0px 0px 5px 1px rgba(10, 10, 10, 0.2);
+    }
+    .menu {
+        margin: auto;
+    }
+}
+.main-photo-wrapper {
+    width: 100%;
+    height: 460px;
+    color: white;
+    background-position:center;
+    background-size: cover;
+    a {
+        color: white !important;
     }
 }
 .padding-a {
@@ -922,8 +1003,6 @@ margin-bottom: 10px;
     }
     .main-photo-wrapper {
         height: 500px !important;
-        position: absolute;
-        top: 0;
         width: 100%;
         height: 600px;
         color: white;
