@@ -17,6 +17,36 @@
 .category-load {
     display: none;
 }
+.category-load-1 {
+    display: none;
+}
+.category-load-2 {
+    display: none;
+}
+.category-load-3 {
+    display: none;
+}
+.category-load-4 {
+    display: none;
+}
+.category-load-5 {
+    display: none;
+}
+.category-load-6 {
+    display: none;
+}
+.category-load-7 {
+    display: none;
+}
+.category-load-8 {
+    display: none;
+}
+.category-load-9 {
+    display: none;
+}
+.category-load-10 {
+    display: none;
+}
 .load_more {
     width: 150px;
     height: 40px;
@@ -539,12 +569,11 @@ margin-bottom: 10px;
     display: block;
 }
 .main-logo {
-    width: 210px;
-    height: 200px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    top: 10px;
+    margin-top: 50px;
 
 }
 .nav-logo {
@@ -583,6 +612,9 @@ margin-bottom: 10px;
 .article-title-wrapper {
     color: $black;
     text-align: center;
+    a {
+        color: $black !important;
+    }
     h1 {
         padding-top: 50px;
         font-size: 72px;
@@ -616,7 +648,7 @@ margin-bottom: 10px;
             margin-right: 50px;
             color: $black;
         }
-        input {
+        input, button {
             height: 50px;
             width: 350px;
         }
@@ -925,8 +957,7 @@ margin-bottom: 10px;
         margin: auto auto 25px auto ;
     }
     .main-logo {
-        width: 120px !important;
-        height: 120px !important;
+        height: 80px !important;
     }
     .latest-articles-container {
         padding: 25px 0px 0px 0px !important;
@@ -1007,7 +1038,7 @@ margin-bottom: 10px;
             .newsletter-button {
                 margin-right: 50px;
             }
-            input {
+            input, button {
                 height: 50px;
                 width: 100% !important;
             }
