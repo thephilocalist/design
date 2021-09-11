@@ -20,11 +20,11 @@
         <div class="spacer-40"></div>
         <h1>THE PHILOCALIST</h1>
         <ul class="menu max-width">
-          <li><a>Home</a></li>
-          <li><a>Art</a></li>
-          <li><a>Fashion</a></li>
-          <li><a>Travel</a></li>
-          <li><a>About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="category.html">Art</a></li>
+          <li><a href="category.html">Fashion</a></li>
+          <li><a href="category.html">Travel</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </div>
       <div class="column large-4 medium-4 show-for-medium">
@@ -98,7 +98,7 @@
       <ul class="menu">
         <li class=""><a><i class="fa fa-bars f-s-16" data-toggle="offCanvasMenu" aria-hidden="true"></i></a></li>
         <li class="show-for-medium"><a href="index.html" class="nav-logo">THE PHILOCALIST</a>
-        <li><a class="m-t-5" href="category.html">Home</a></li>
+        <li><a class="m-t-5" href="index.html">Home</a></li>
         <li><a class="m-t-5" href="category.html">Art</a></li>
         <li><a class="m-t-5" href="category.html">Fashion</a></li>
         <li><a class="m-t-5" href="category.html">Travel</a></li>
@@ -183,14 +183,14 @@
     </div> </div>
     </div>
     <div class="clearfix"></div>
-    <div class="spacer-100"></div>
+    <div class="spacer-200"></div>
     <!-- End Main Article Carousel -->
     
     <!-- Start Philocalist Banner -->
     <div class="clearfix"></div>
     <div class="philocalist-banner-wrapper">
         <a href="index.html"><img class="banner-logo" src="/assets/img/logo_full_w_Tagline.png"></a>
-    </div><div class="spacer-100"></div>
+    </div><div class="spacer-150"></div>
     <!-- End Philocalist Banner -->
     
     <!-- Start - Category - Articles -->
@@ -446,12 +446,22 @@
     <script>
       /* Load More */
       $(function() {
-        $(".category-load").slice(0, 4).show(); // select the first ten
+        $(".category-load").slice(0, 4).show(); // select the first four
         $("#load").click(function(e){ // click event for load more
           e.preventDefault();
           $(".category-load:hidden").slice(0, 3).show();
           if ($(".category-load:hidden").length == 0) {
               $("#load").fadeOut('slow');
+          }
+        });
+      });
+      $(function() {
+        $(".load-6").slice(0, 6).show(); // select the first six
+        $("#load-3").click(function(e){ // click event for load more
+          e.preventDefault();
+          $(".load-6:hidden").slice(0, 3).show();
+          if ($(".load-6:hidden").length == 0) {
+              $("#load-3").fadeOut('slow');
           }
         });
       });
