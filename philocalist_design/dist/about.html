@@ -12,11 +12,11 @@
   <body>
     <!-- Start Navigation Menu -->
     <div class="navigation-bar">
-      <div class="column large-4 medium-4">
-        <div class="spacer-40"></div>
+      <div class="column large-4 medium-2 small-1">
+        <div class="spacer-20"></div>
         <i class="fa fa-bars" data-toggle="offCanvasMenu" aria-hidden="true"></i>
       </div>
-      <div class="column large-4 medium-4 show-for-medium">
+      <div class="column large-4 medium-8 show-for-medium">
         <div class="spacer-40"></div>
         <h1>THE PHILOCALIST</h1>
         <ul class="menu max-width">
@@ -27,7 +27,11 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
-      <div class="column large-4 medium-4 show-for-medium">
+      <div class="column small-10 show-for-small-only">
+        <div class="spacer-15"></div>
+        <h1>THE PHILOCALIST</h1>
+      </div>
+      <div class="column large-4 medium-2 show-for-medium">
         <div class="spacer-40"></div>
         <button class="button search-button float-right" type="button" data-toggle="example-dropdown-bottom-right1"><i class="fas fa-search"></i></button>
         <div class="dropdown-pane bottom" data-alignment="right" id="example-dropdown-bottom-right1" data-dropdown>
@@ -35,74 +39,141 @@
         </div>
       </div>
       <!-- Start OffCanvas Menu -->
-      <div class="grid-x grid-margin-x">
-        <div class="off-canvas position-top"  id="offCanvasMenu" data-off-canvas>
-          <div class="column large-2 medium-2 small-2">
-            <div class="spacer-50"></div>
-            <span data-toggle="offCanvasMenu" aria-hidden="true">×</span>
-          </div>
-          <div class="column large-2 medium-2 small-2">
-            <div class="spacer-200"></div>
-            <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
-              <li><a href="index.html">ART</a></li>
-              <li><a href="category.html">VIEW ALL</a></li>
-              <li><a href="category.html">Digital</a></li>
-              <li><a href="category.html">Drawing</a></li>
-              <li><a href="category.html">Painting</a></li>
-            </ul>
-          </div>
-          <div class="column large-2 medium-2 small-2">
-            <div class="spacer-200"></div>
-            <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
-              <li><a href="index.html">ART</a></li>
-              <li><a href="category.html">VIEW ALL</a></li>
-              <li><a href="category.html">Digital</a></li>
-              <li><a href="category.html">Drawing</a></li>
-              <li><a href="category.html">Painting</a></li>
-            </ul>            
-          </div>
-          <div class="column large-2 medium-2 small-2">
-            <div class="spacer-200"></div>
-            <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
-              <li><a href="index.html">ART</a></li>
-              <li><a href="category.html">VIEW ALL</a></li>
-              <li><a href="category.html">Digital</a></li>
-              <li><a href="category.html">Drawing</a></li>
-              <li><a href="category.html">Painting</a></li>
-            </ul>            
-          </div>
-          <div class="column large-2 medium-2 small-2">
-            <div class="spacer-200"></div>
-            <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
-              <li><a href="index.html">ART</a></li>
-              <li><a href="category.html">VIEW ALL</a></li>
-              <li><a href="category.html">Digital</a></li>
-              <li><a href="category.html">Drawing</a></li>
-              <li><a href="category.html">Painting</a></li>
-            </ul>            
-          </div>
-          <div class="column large-2 medium-2 small-2">
-            <div class="spacer-200"></div>
-            <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
-              <li><a href="about.html">ABOUT US</a></li>
-            </ul>            
+      <div class="off-canvas position-top"  id="offCanvasMenu" data-off-canvas>
+        <span data-toggle="offCanvasMenu" aria-hidden="true">×</span>
+        <div class="clearfix"></div>
+        <div class="offCanvasMenu-wrapper ">
+          <div class="columns large-up-4 small-up-4 medium-up-4">
+            <div class="column">
+              <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+                <li><a href="index.html">ART</a><br></li>
+                <li><a href="category.html">VIEW ALL</a></li>
+                <li><a href="category.html">Painting</a></li>
+                <li><a href="category.html">Digital</a></li>
+                <li><a href="category.html">Drawing</a></li>
+                <li><a href="category.html">Painting</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+                <li><a href="index.html">ART</a><br></li>
+                <li><a href="category.html">VIEW ALL</a></li>
+                <li><a href="category.html">Digital</a></li>
+                <li><a href="category.html">Drawing</a></li>
+                <li><a href="category.html">Painting</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+                <li><a href="index.html">ART</a><br></li>
+                <li><a href="category.html">VIEW ALL</a></li>
+                <li><a href="category.html">Digital</a></li>
+                <li><a href="category.html">Drawing</a></li>
+                <li><a href="category.html">Painting</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+                <li><a href="about.html">ABOUT</a></li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
+
+
+<!-- 
+      <div class="grid-x grid-margin-x ">
+        <div class="off-canvas position-top"  id="offCanvasMenu" data-off-canvas>
+          <div class="spacer-50"></div>
+          <span data-toggle="offCanvasMenu" aria-hidden="true">×</span>
+          <div class="spacer-50"></div>
+          <div class="columns large-up-5 medium-up-3 small-up-3">
+            <div class="column">
+              <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+                <li><a href="index.html">ART</a></li>
+                <li><a href="category.html">VIEW ALL</a></li>
+                <li><a href="category.html">Digital</a></li>
+                <li><a href="category.html">Drawing</a></li>
+                <li><a href="category.html">Painting</a></li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+            <div class="column">
+              <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+                <li><a href="index.html">ART</a></li>
+                <li><a href="category.html">VIEW ALL</a></li>
+                <li><a href="category.html">Digital</a></li>
+                <li><a href="category.html">Drawing</a></li>
+                <li><a href="category.html">Painting</a></li>
+              </ul>            
+            </div>
+            <div class="clearfix"></div>
+            <div class="column">
+              <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+                <li><a href="index.html">ART</a></li>
+                <li><a href="category.html">VIEW ALL</a></li>
+                <li><a href="category.html">Digital</a></li>
+                <li><a href="category.html">Drawing</a></li>
+                <li><a href="category.html">Painting</a></li>
+              </ul>            
+            </div>
+            <div class="column">
+              <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+                <li><a href="index.html">ART</a></li>
+                <li><a href="category.html">VIEW ALL</a></li>
+                <li><a href="category.html">Digital</a></li>
+                <li><a href="category.html">Drawing</a></li>
+                <li><a href="category.html">Painting</a></li>
+              </ul>            
+            </div>
+            <div class="column">
+              <ul class="vertical dropdown menu accordion-menu" data-accordion-menu>
+                <li><a href="about.html">ABOUT US</a></li>
+              </ul>            
+            </div>
+          </div>
+        </div>
+      </div> -->
       <!-- End OffCanvas Menu -->
     </div>
     <!-- End Navigation Menu -->
 
     <!-- Start Sticky Navigation Menu -->
-    <div class="sticky-navigation-bar show-for-medium">
+    <div class="sticky-navigation-bar show-for-large">
       <ul class="menu">
         <li class=""><a><i class="fa fa-bars f-s-16" data-toggle="offCanvasMenu" aria-hidden="true"></i></a></li>
-        <li class="show-for-medium"><a href="index.html" class="nav-logo">THE PHILOCALIST</a>
+        <li class="show-for-large"><a href="index.html" class="nav-logo">THE PHILOCALIST</a>
         <li><a class="m-t-5" href="index.html">Home</a></li>
         <li><a class="m-t-5" href="category.html">Art</a></li>
         <li><a class="m-t-5" href="category.html">Fashion</a></li>
         <li><a class="m-t-5" href="category.html">Travel</a></li>
         <li><a class="m-t-5" href="about.html">About</a></li>
+        <li class="m-l-auto">
+          <button class="button search-button" type="button" data-toggle="example-dropdown-bottom-right3"><i class="fas fa-search"></i></button>
+          <div class="dropdown-pane bottom" data-alignment="right" id="example-dropdown-bottom-right3" data-dropdown>
+            <input type="search" placeholder="Search Article..." data-auto-focus="true">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="sticky-navigation-bar show-for-medium-only">
+      <ul class="menu">
+        <li class=""><a><i class="fa fa-bars f-s-16" data-toggle="offCanvasMenu" aria-hidden="true"></i></a></li>
+        <li class="show-for-medium m-l-auto"><a href="index.html" class="nav-logo">THE PHILOCALIST</a>
+        <li class="m-l-auto">
+          <button class="button search-button" type="button" data-toggle="example-dropdown-bottom-right3"><i class="fas fa-search"></i></button>
+          <div class="dropdown-pane bottom" data-alignment="right" id="example-dropdown-bottom-right3" data-dropdown>
+            <input type="search" placeholder="Search Article..." data-auto-focus="true">
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="sticky-navigation-bar show-for-small-only">
+      <ul class="menu">
+        <li class=""><a><i class="fa fa-bars f-s-16" data-toggle="offCanvasMenu" aria-hidden="true"></i></a></li>
+        <li class="show-for-small-only m-l-auto"><a href="index.html" class="nav-logo">THE PHILOCALIST</a>
         <li class="m-l-auto">
           <button class="button search-button" type="button" data-toggle="example-dropdown-bottom-right3"><i class="fas fa-search"></i></button>
           <div class="dropdown-pane bottom" data-alignment="right" id="example-dropdown-bottom-right3" data-dropdown>
@@ -168,7 +239,7 @@
               <div class="text-wrapper">
                   <div class="clearfix"></div>
                   <p class="category">CATEGORY</p>
-                  <h2 class="title"><b>Article Title</b></h2>
+                  <h2 class="title">Article Title</h2>
                   <p class="date">June 13, 2021 / by Author Name</p><br>
               </div>
               <div class="clearfix"></div>
@@ -184,7 +255,7 @@
               <div class="text-wrapper">
                   <div class="clearfix"></div>
                   <p class="category">CATEGORY</p>
-                  <h2 class="title"><b>Article Title</b></h2>
+                  <h2 class="title">Article Title</h2>
                   <p class="date">June 13, 2021 / by Author Name</p><br>
               </div>
               <div class="clearfix"></div>
@@ -200,7 +271,7 @@
               <div class="text-wrapper">
                   <div class="clearfix"></div>
                   <p class="category">CATEGORY</p>
-                  <h2 class="title"><b>Article Title</b></h2>
+                  <h2 class="title">Article Title</h2>
                   <p class="date">June 13, 2021 / by Author Name</p><br>
               </div>
               <div class="clearfix"></div>
@@ -216,7 +287,7 @@
               <div class="text-wrapper">
                   <div class="clearfix"></div>
                   <p class="category">CATEGORY</p>
-                  <h2 class="title"><b>Article Title</b></h2>
+                  <h2 class="title">Article Title</h2>
                   <p class="date">June 13, 2021 / by Author Name</p><br>
               </div>
               <div class="clearfix"></div>
@@ -232,7 +303,7 @@
               <div class="text-wrapper">
                   <div class="clearfix"></div>
                   <p class="category">CATEGORY</p>
-                  <h2 class="title"><b>Article Title</b></h2>
+                  <h2 class="title">Article Title</h2>
                   <p class="date">June 13, 2021 / by Author Name</p><br>
               </div>
               <div class="clearfix"></div>
@@ -248,7 +319,7 @@
               <div class="text-wrapper">
                   <div class="clearfix"></div>
                   <p class="category">CATEGORY</p>
-                  <h2 class="title"><b>Article Title</b></h2>
+                  <h2 class="title">Article Title</h2>
                   <p class="date">June 13, 2021 / by Author Name</p><br>
               </div>
               <div class="clearfix"></div>
@@ -264,7 +335,7 @@
               <div class="text-wrapper">
                   <div class="clearfix"></div>
                   <p class="category">CATEGORY</p>
-                  <h2 class="title"><b>Article Title</b></h2>
+                  <h2 class="title">Article Title</h2>
                   <p class="date">June 13, 2021 / by Author Name</p><br>
               </div>
               <div class="clearfix"></div>
@@ -280,7 +351,7 @@
               <div class="text-wrapper">
                   <div class="clearfix"></div>
                   <p class="category">CATEGORY</p>
-                  <h2 class="title"><b>Article Title</b></h2>
+                  <h2 class="title">Article Title</h2>
                   <p class="date">June 13, 2021 / by Author Name</p><br>
               </div>
               <div class="clearfix"></div>
@@ -300,10 +371,10 @@
     <div class="clearfix"></div>
     <footer>
       <div class="row">
-        <div class="column large-3 medium-4 small-12">
-          <a href="index.html"><img class="footer-logo" src="/assets/img/logo_full_w_Tagline.png"></a>
+        <div class="column large-3 medium-12 small-12">
+          <a href="index.html"><img class="footer-logo" src="/assets/img/logo_full_w_Tagline.png"></a><br><br><br><br><br>
         </div>
-        <div class="column large-6 medium-4 small-12">
+        <div class="column large-6 medium-12 small-12">
           <div class="subscribe-banner-container">
             <h6>Become a Philocalist</h6>
             <p>If you want to become part of The Philocalist culture, sign up for the private newsletter. Your email is never shared.</p>
@@ -313,14 +384,14 @@
             </form>
           </div>
         </div>
-        <div class="column large-3 medium-4 small-12">
+        <div class="column large-3 medium-12 small-12">
           <div class="spacer-90"></div>
           <ul class="horizontal menu footer-social">
             <li><a><i class="fab fa-instagram"></i></a></li>
             <li><a><i class="fas fa-envelope"></i></a></li>
           </ul>
           <div class="spacer-10"></div>
-          <ul class="horizontal menu">
+          <ul class="horizontal menu center-content">
             <li><a>PRIVACY POLICY</a></li>
             <li><a>CONTACT</a></li>
           </ul>
@@ -351,12 +422,18 @@
             },
             600:{
                 lazyload:true,
-                items:2.5,
+                items:2.2,
                 nav:false
             },
             1000:{
                 lazyload:true,
-                items:3.4,
+                items:2.2,
+                nav:true,
+                loop:true
+            },
+            1200:{
+                lazyload:true,
+                items:3.3,
                 nav:true,
                 loop:true
             },
