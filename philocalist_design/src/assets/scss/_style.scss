@@ -267,6 +267,9 @@ li {
         color: $black;
     }
 }
+.p-b-0 {
+    padding-bottom: 0px !important;
+}
 .m-auto {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -285,6 +288,9 @@ li {
 }
 .m-r-0 {
     margin-right: 0 !important;
+}
+.m-b-0 {
+    margin-bottom: 0px;
 }
 .m-b-10 {
     margin-bottom: 10px;
@@ -1389,11 +1395,15 @@ input {
     h3 {
         font-size: 18px !important;
     }
+    #offCanvasMenu .d-flex i {
+        font-size: 24px !important;
+    }
     .mobile-offcanvas-logo {
         height: 112px;
         width: 151px;
         margin: 0 auto;
-        
+        display: block;
+        margin-top: 25px;
     }
     .sticky-navigation-bar {
         padding: 10px 5px !important;
@@ -1815,8 +1825,17 @@ input {
 .c-black {
     color: $black !important;
 }
+.f-s-20 {
+    font-size: 20px !important;
+}
+.f-s-22 {
+    font-size: 22px !important;
+}
 .f-s-28 {
     font-size: 28px !important;
+}
+.f-s-30 {
+    font-size: 30px !important;
 }
 .f-s-36 {
     font-size: 36px !important;
