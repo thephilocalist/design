@@ -1347,8 +1347,11 @@ input {
 }
 .tag-title {
     font-size: 68px;
-    color: $black !important;
     text-align: center;
+    margin-top: 50px;
+    a {
+        color: $black !important;
+    }
 }
 .tag-title:hover {
     color: $black !important;
@@ -1809,7 +1812,19 @@ input {
 }
 
 /* Medium  CSS*/
-@media screen and (min-width: 39.9988em) and (max-width:1199px){
+@media screen and (min-width: 39.9988em) and (max-width:1199px){/* 
+    body {
+        overflow-x: hidden !important;
+    } */
+    .category-title {
+        margin-top: 0 !important;
+    }
+    .spacer-150 {
+        margin-bottom: 50px !important;
+    }
+    .article-title-wrapper h1, .article-title-wrapper p {
+        width: 80%;
+    }
     .w-60 {
         width: 80% !important;
     }
@@ -1832,8 +1847,24 @@ input {
             width: 50% !important;
         }
     }
-    footer .subscribe-banner-container form {
-        width: 100%;
+    .spacer-90 {
+        margin-bottom: 50px;
+    }
+    .text-wrapper {
+        .title {
+            font-size: 16px !important;
+        }
+    }
+    .medium-category-article {
+        margin-bottom: 20px;
+    }.spacer-200 {
+        margin-bottom: 100px;
+    }
+    .tag-title {
+        text-align: center;
+    }
+    .input-group {
+        margin-top: 50px;
     }
     .category-wrapper {
         width: 100%;
@@ -1842,11 +1873,11 @@ input {
         margin: 0 auto !important;
 
         .photo-wrapper {
-            width: 320px !important;
+            width: 340px !important;
             height: 400px !important;
         }
         .category-text-wrapper {
-            width: 320px !important;
+            width: 340px !important;
             height: 400px !important;
             padding: 25px;
 
