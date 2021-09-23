@@ -949,6 +949,15 @@ margin-bottom: 10px;
     margin: 0 auto;
     display: flex;
     font-size: 80px;
+    margin-top: 100px;
+}
+.category-p {
+    width: 1120px;
+    padding-left: 35px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 18px;
+
 }
 .category-wrapper {
     display: flex;
@@ -1339,6 +1348,7 @@ input {
 .tag-title {
     font-size: 68px;
     color: $black !important;
+    text-align: center;
 }
 .tag-title:hover {
     color: $black !important;
@@ -1374,10 +1384,13 @@ input {
     right: 20px;
     z-index: 9999999999999999999999999;
     a i {
-        color: $menta;
-        font-size: 40px;
+        color: $black;
+        font-size: 36px;
         box-shadow: 0px 0px 10px 1px rgba(10, 10, 10, 0.7);
         border-radius: 50%;
+        padding: 12px;
+        width: 60px;
+        background-color: $menta;
     }
 }
 .input-group-label {
@@ -1414,7 +1427,7 @@ input {
         font-size: 24px !important;
     }
     .mobile-offcanvas-logo {
-        height: 112px;
+        height: auto;
         width: 151px;
         margin: 0 auto;
         display: block;
@@ -1444,6 +1457,12 @@ input {
     .sticky-navigation-bar {
         height: 52px !important;
     }
+    .search-article {
+        font-size: 12px !important;
+    }
+    .input-group-label {
+        font-size: 12px !important;
+    }
     .category-wrapper {
         width: 100%;
         display: block;
@@ -1452,6 +1471,10 @@ input {
         .photo-wrapper{
             width: 100%;
             height: 350px !important;
+        }
+        .tag-title {
+            font-size: 55px !important;
+            text-align: left !important;
         }
         .category-text-wrapper {
             width: 95%;
@@ -1468,7 +1491,7 @@ input {
                 width: 200px;
                 height: 50px;
                 padding-top: 10px;
-                margin-top: 40px !important;
+                margin-top: 10px !important;
             }
             h3 {
                 margin-top: 25px !important;
@@ -1553,9 +1576,8 @@ input {
         width: 100%;
         height: 600px;
         color: white;
-        background-position:center;
-        background-size: center;
-        height: 300px !important;
+        background-position:bottom;
+        height: 149px !important;
         background-size: cover !important;
         font-size: 10px !important;
         a {
@@ -1567,9 +1589,13 @@ input {
         height: 100% !important;
         h1 {
             font-size: 32px !important;
+            width: auto !important;
+            margin-bottom: 30px;
         }
         p {
             font-size: 18px;
+            width: auto !important;
+            padding-bottom: 0px !important;
         }
         .column:first-child{
             border-right: none;
@@ -1603,6 +1629,17 @@ input {
     .social-footer {
         width: 100%;
     }
+    .share {
+        display: flex !important;
+        margin: 20px 0 10px 0;
+        .article-share-btn {
+            margin: 0 2px;
+        }
+    }
+    .medium-category-article .text-wrapper {
+        height: auto !important;
+        margin: 10px 0 20px 0;
+    }
     .spacer-10 {
         margin-bottom: 10px !important;
     }
@@ -1616,7 +1653,7 @@ input {
         margin-bottom: 30px !important;
     }
     .spacer-200 {
-        margin-bottom: 85px !important;
+        margin-bottom: 50px !important;
     }
     .spacer-250 {
         margin-bottom: 125px !important;
@@ -1670,7 +1707,14 @@ input {
     }
     .category-title {
         font-size: 46px !important;
-        text-align: center !important;
+        padding-left: 0 !important;
+        width: 100% !important;
+        display: block !important;
+        margin-top: 20px !important;
+        line-height: auto !important;
+    }
+    .category-p {
+        font-size: 11px !important;
         padding-left: 0 !important;
         width: 100% !important;
         display: block !important;
@@ -1687,7 +1731,7 @@ input {
         }
     }
     footer {
-        padding-top: 0 !important;
+        padding: 0 !important;
 
         .rights {
             font-size: 14px !important;
