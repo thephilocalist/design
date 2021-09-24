@@ -7,7 +7,7 @@
     <title>The Philocalist</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <script src="https://kit.fontawesome.com/deecf005d3.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="/assets/img/logo_white.png" type="image/png" sizes='72x72'>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/icon" sizes='64x64'>
   </head>
   <body>
     <!-- Start Navigation Menu -->
@@ -16,7 +16,7 @@
         <i class="fa fa-bars" data-toggle="offCanvasMenu" aria-hidden="true"></i>
       </div> 
       <div class="column large-4 medium-8 show-for-medium">
-        <img class="header-logo" src="/assets/img/FINAL_Title.png">
+        <a href="index.html"><img class="header-logo" src="/assets/img/FINAL_Title.png"></a>
         <ul class="menu max-width">
           <li><a href="index.html">Home</a></li>
           <li><a href="category.html">Art</a></li>
@@ -26,7 +26,7 @@
         </ul>
       </div>
       <div class="column small-10 show-for-small-only">
-        <img class="header-logo" src="/assets/img/FINAL_Title.png">
+        <a href="index.html"><img class="header-logo" src="/assets/img/FINAL_Title.png"></a>
       </div>
       <div class="column large-4 medium-2 small-1">
         <button class="button search-button float-right" type="button" data-toggle="example-dropdown-bottom-right1"><i class="fas fa-search"></i></button>
@@ -39,26 +39,28 @@
         <div class="show-for-medium">
           <span data-toggle="offCanvasMenu" aria-hidden="true">×</span>
           <div class="clearfix"></div>
-          <div class="offCanvasMenu-wrapper">
-            <div class="columns large-up-2 medium-up-2 small-up-1">
-              <div class="column">
-                <ul class="vertical dropdown menu accordion-menu align-left f-s-48" data-accordion-menu>
-                  <li><br><a href="category.html">ART</a></li>
-                  <li><a href="category.html">FASHION</a></li>
-                  <li><a href="category.html">TRAVEL</a><br></li>
-                  <li><a href="category.html">ABOUT</a></li>
-                </ul>
-              </div>
-              <div class="column">
-                <ul class="vertical dropdown menu accordion-menu align-right f-s-36" data-accordion-menu>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="category.html">Επικοινωνία</a><br></li>
-                  <li><a href="index.html"><img class="offcanvas-logo" src="/assets/img/Logo_Icon.png"></a><br></li> 
-                  <li><p>Follow Us</p></li>
-                  <li class="d-flex">
-                    <a><i class="fab fa-instagram"></i></a><a><i class="fas fa-envelope"></i></a> 
-                  </li>
-                </ul>
+          <div class="row">
+            <div class="offCanvasMenu-wrapper">
+              <div class="columns large-up-2 medium-up-2 small-up-1">
+                <div class="column">
+                  <ul class="vertical dropdown menu accordion-menu align-left" data-accordion-menu>
+                    <li><br><a class="f-s-48" href="category.html">ART</a></li>
+                    <li><a class="f-s-48" href="category.html">FASHION</a></li>
+                    <li><a class="f-s-48" href="category.html">TRAVEL</a><br></li>
+                    <li><a class="f-s-48" href="category.html">ABOUT</a></li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <ul class="vertical dropdown menu accordion-menu align-right" data-accordion-menu>
+                    <li><a class="f-s-36" href="index.html">Home</a></li>
+                    <li><a class="f-s-36" href="category.html">Επικοινωνία</a><br></li >
+                    <li><a class="f-s-36" href="index.html"><img class="offcanvas-logo" src="/assets/img/Logo_Icon.png"></a><br></li> 
+                    <li><p class="f-s-36 m-b-0">Follow Us</p></li>
+                    <li class="d-flex">
+                      <a><i class="fab fa-instagram"></i></a><a><i class="fas fa-envelope"></i></a> 
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -154,8 +156,6 @@
         <p class="category-p">CATEGORY</p>
       </div>
       <div class="clearfix"></div>
-      <div class="spacer-50"></div>
-      <div class="clearfix"></div>
       <div class="category-wrapper">
           <div class="photo-wrapper" data-src="https://2.bp.blogspot.com/-ErlovyvpO3o/WyGT6Vm017I/AAAAAAAAKSk/Qsoy7V4sK-kk_bkCeImrkUQIK3_X9uKjACLcBGAs/s1600/ian-dooley-347962-1240x826.jpg" style="background-image: url('https://2.bp.blogspot.com/-ErlovyvpO3o/WyGT6Vm017I/AAAAAAAAKSk/Qsoy7V4sK-kk_bkCeImrkUQIK3_X9uKjACLcBGAs/s1600/ian-dooley-347962-1240x826.jpg');"></div>
           <div class="category-text-wrapper">
@@ -169,13 +169,18 @@
               <a class="button read-more">Διάβασέ το&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
           </div>
       </div>  <div class="clearfix"></div>
-      <div class="spacer-200"></div>
-      <div class="clearfix"></div>
     </div>
     <!-- End Category -->
-    
+    <div class="show-for-small-only">
+    <div class="clearfix"></div>
+    <div class="spacer-10"></div>
+    <div class="clearfix"></div>
+    <div class="spacer-10"></div>
+    <div class="clearfix"></div>
+    <div class="spacer-10"></div>
+    <div class="clearfix"></div>
+    </div>
     <!-- Start - Category - Articles -->
-    
     <div class="columns large-offset-2 large-8 medium-10 medium-offset-1 small-12">
       <div class="small-up-1 medium-up-2 large-up-3">
         <div class="column load-6">
@@ -326,7 +331,7 @@
     </div>
     <div class="clearfix"></div>
     <div class="spacer-10"></div>
-    <a class="load_more" id="load-3">Περισσότερα άρθρα</a>
+    <a class="load_more" id="load-3">Περισσότερα άρθρα&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
     <!-- End - Category - Articles -->
     <div class="clearfix"></div>
     <div class="spacer-200"></div>
@@ -343,14 +348,14 @@
             <h6>Become a Philocalist</h6>
             <p>If you want to become part of The Philocalist culture, sign up for the private newsletter. Your email is never shared.</p>
             <form>
-                <input type="text" class="form-placeholder" placeholder="Enter your email..">
+                <input type="text" class="form-placeholder f-s-20" placeholder="Enter your email..">
                 <input type="submit" class="button newsletter-button" value="SIGN UP">
             </form>
           </div>
         </div>
         <div class="column large-3 medium-12 small-12">
           <div class="spacer-90"></div>
-          <ul class="horizontal menu footer-social">
+          <ul class="horizontal menu footer-social show-for-medium">
             <li><a><i class="fab fa-instagram"></i></a></li>
             <li><a><i class="fas fa-envelope"></i></a></li>
           </ul>
@@ -359,6 +364,10 @@
             <li><a>ΟΡΟΙ ΧΡΗΣΗΣ</a></li>
             <li class="border-right show-for-small-only">|</li>
             <li><a>ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+          </ul>
+          <ul class="horizontal menu footer-social show-for-small-only">
+            <li><a><i class="fab fa-instagram"></i></a></li>
+            <li><a><i class="fas fa-envelope"></i></a></li>
           </ul>
         </div>
       </div>

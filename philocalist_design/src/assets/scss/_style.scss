@@ -125,7 +125,7 @@
     border-radius: 25px;
     width: 280px;
     height: 60px;
-    font-family: 'oregon-demi';
+    font-family: 'ubuntu';
 }
 .load_more:hover {
     color: $black;
@@ -333,7 +333,7 @@ footer {
             text-align: center;
         }
         p {
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
             margin-bottom: 50px;
         }
@@ -624,7 +624,7 @@ margin-bottom: 10px;
             }
         }
         .title {
-            font-size: 25px;
+            font-size: 18px;
             margin-bottom: 0px;
             font-family: 'oregon' !important;
             padding: 10px 10px;
@@ -799,6 +799,7 @@ margin-bottom: 10px;
     h3 {
         font-size: 44px;
         margin: 0;
+        font-family: 'ubuntu-bold';
     }
     p {
         font-size: 30px;
@@ -937,9 +938,9 @@ margin-bottom: 10px;
     padding-top: 25px;
 
     .banner-logo {
-        width: 475px;
-        height: 300px;
-        margin: 0 auto;
+        width: 276px;
+        height: auto;
+        margin: 35px auto 0 auto;
         display: block;
     }
 }
@@ -950,6 +951,7 @@ margin-bottom: 10px;
     display: flex;
     font-size: 80px;
     margin-top: 100px;
+    line-height: 100%;
 }
 .category-p {
     width: 1120px;
@@ -957,21 +959,20 @@ margin-bottom: 10px;
     margin: 0 auto;
     display: flex;
     font-size: 18px;
-
+    margin-bottom: 20px;
 }
 .category-wrapper {
     display: flex;
-    margin: 0 auto;
-    width: 1120px;
-    padding-left: 35px;
+    margin: 0 auto 150px auto;
+    width: 1060px;
 
     .photo-wrapper {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 0 25px 0 25px;
-        width: 525px;
-        height: 565px;
+        width: 526px;
+        height: 563px;
     }
     .category-text-wrapper {
         background-color: $menta;
@@ -981,8 +982,8 @@ margin-bottom: 10px;
         padding: 80px;
         text-align: center;
         font-family: 'oregon-demi' !important;
-        width: 600px;
-        height: 590px;
+        width: 603px;
+        height: 587px;
 
         p {
             font-size: 18px;
@@ -998,7 +999,7 @@ margin-bottom: 10px;
             width: 280px;
             height: 60px;
             padding: 15px;
-            font-family: 'oregon-demi';
+            font-family: 'ubuntu';
         }
     }
 }
@@ -1103,7 +1104,7 @@ margin-bottom: 10px;
         font-size: 72px;
         line-height: 1;
         font-family: 'ubuntu-bold' !important;
-        width: 70%;
+        width: 75%;
         margin: 0 auto;
 
     }
@@ -1246,7 +1247,15 @@ margin-bottom: 10px;
         height: auto;
     }
     .d-flex i {
-        font-size: 38px !important;
+        font-size: 40px !important;
+    }
+}
+.about-title {
+    font-size: 68px;
+    text-align: center;
+    margin-top: 50px;
+    a {
+        color: $black;
     }
 }
 .off-canvas {
@@ -1327,13 +1336,16 @@ margin-bottom: 10px;
         box-shadow: 0px 0px 5px 1px rgba(10, 10, 10, 0.2); */
     }
     .fab, .fas {
-        font-size: 22px !important;
+        font-size: 25px !important;
     }
     .fab:hover, .fas:hover {
         font-weight: bolder;
     }
     .menu {
         margin: auto;
+        li {
+            font-size: 18px;
+        }
     }
 }
 input {
@@ -1482,34 +1494,33 @@ input {
         .category-text-wrapper {
             width: 95%;
             height: 350px !important;
-            margin: 0 auto !important;
+            margin: -100px auto 0 auto!important;
             padding: 20px;
-            margin-top: -100px !important;
 
             p {
-                font-size: 15px;
+                font-size: 12px;
             }
             .read-more {
-                font-size: 22px;
-                width: 200px;
-                height: 50px;
-                padding-top: 10px;
-                margin-top: 10px !important;
+                font-size: 14px;
+                width: 164px;
+                height: 44px;
+                padding-top: 13px;
+                margin-top: 40px !important;
             }
             h3 {
                 margin-top: 25px !important;
+                font-size: 24px !important;
             }
         }
     }
     .philocalist-banner-wrapper {
         height: 210px;
         .banner-logo {
-            width: 230px !important;
-            height: 150px !important;
+            width: 128px !important;
         }
     }
     .carousel-title {
-        font-size: 18px !important;
+        font-size: 15px !important;
     }
     .spacer-200 {
         margin-bottom: 85px !important;
@@ -1557,8 +1568,7 @@ input {
     }
     .about-logo {
         margin-bottom: 30px !important;
-        height: 100% !important;
-        width: 100% !important;
+        width: 204px !important;
     }
 
     .category-photo-wrapper {
@@ -1580,7 +1590,7 @@ input {
         height: 600px;
         color: white;
         background-position:bottom;
-        height: 149px !important;
+        height: 139px !important;
         background-size: cover !important;
         font-size: 10px !important;
         a {
@@ -1616,7 +1626,14 @@ input {
     }
     .latest-articles-container {
         padding: 25px 0px 0px 0px !important;
-
+        h3 {
+            font-size: 30px !important;
+            font-family: 'ubuntu-bold';
+        }
+        p {
+            font-size: 20px !important;
+            font-family: 'ubuntu';
+        }
     }
     .about-us-wrapper {
         padding: 0px 7px !important;
@@ -1638,6 +1655,24 @@ input {
         .article-share-btn {
             margin: 0 2px;
         }
+    }
+    .input-group {
+        margin-top: 20px;
+    }
+    .about-title {
+        font-size: 48px !important;
+        margin-top: 15px !important;
+    }
+    .tag-title {
+        text-align: left !important;
+        margin-bottom: 0 !important;
+        a {
+            font-size: 55px !important;
+            line-height: 100%;
+        }
+    }
+    .search-article, .search-article:focus {
+        font-size: 12px !important;
     }
     .medium-category-article .text-wrapper {
         height: auto !important;
@@ -1677,7 +1712,7 @@ input {
         height: 200px !important;
     }
     .h_442 {
-        height: 260px !important;
+        height: 259px !important;
     }    
     .h_500 {
         height: 500px !important;
@@ -1700,6 +1735,18 @@ input {
     .carousel-title {
         text-align: left;
     }
+    .article-main-text {
+        font-size: 18px !important;
+        p {
+            font-size: 18px !important;
+        }
+        .article-tags {
+            font-size: 16px !important;
+            a {
+                color: $black !important;
+            }
+        }
+    }
     .main-article {
         .text-wrapper {
             height: 393px !important;
@@ -1708,16 +1755,42 @@ input {
             }
         }
     }
+    .spacer-30 {
+        margin-bottom: 10px !important;
+    }
+
+    .author-wrapper {
+        .author-image {
+            height: 37px !important;
+            width: 37px !important;
+        }
+        .author p{
+            font-size: 16px !important;
+        }
+        .share .article-share-btn {
+            height: 35px !important;
+            width: 51px !important;
+            padding: 7px !important;
+        }
+    }
+    .load_more {
+        height: 41px !important;
+        font-size: 14px !important;
+        padding: 13px 0 !important;
+    }
+    .category-wrapper {
+        margin-bottom: 0px !important;
+    }
     .category-title {
-        font-size: 46px !important;
+        font-size: 69px !important;
         padding-left: 0 !important;
         width: 100% !important;
         display: block !important;
-        margin-top: 20px !important;
-        line-height: auto !important;
+        margin-top: 0 !important;
+        line-height: 100% !important;
     }
     .category-p {
-        font-size: 11px !important;
+        font-size: 13px !important;
         padding-left: 0 !important;
         width: 100% !important;
         display: block !important;
