@@ -962,10 +962,8 @@ margin-bottom: 10px;
     }
 }
 .category-title {
-    width: 1120px;
-    padding-left: 35px;
+    width: 1060px;
     margin: 0 auto;
-    display: flex;
     font-size: 80px;
     margin-top: 80px;
     line-height: 100%;
@@ -975,8 +973,7 @@ margin-bottom: 10px;
     font-weight: normal !important;
 }
 .category-p {
-    width: 1120px;
-    padding-left: 35px;
+    width: 1060px;
     margin: 0 auto;
     display: flex;
     font-size: 18px;
@@ -1946,12 +1943,13 @@ input {
 }
 
 /* Medium  CSS*/
-@media screen and (min-width: 39.9988em) and (max-width:1199px){/* 
-    body {
+@media screen and (min-width: 39.9988em) and (max-width:1199px){
+    /* body {
         overflow-x: hidden !important;
     } */
-    .category-title {
-        margin-top: 0 !important;
+    .category-title, .category-p {
+        width: auto !important;
+        margin-left: 50px !important;
     }
     .spacer-150 {
         margin-bottom: 50px !important;
@@ -1962,23 +1960,58 @@ input {
     .w-60 {
         width: 80% !important;
     }
-    .spacer-50 {
-        margin-bottom: 5px;
-    }
     footer {
-        padding-top: 0 !important;
-
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         .rights {
             font-size: 14px !important;
+        }
+        .subscribe-banner-container form {
+            width: 100% !important;
+
+            input {
+                width: 70% !important;
+            }
+            .newsletter-button {
+                width: 30% !important;
+                font-size: 16px !important;
+            }
+        }
+        .footer-social {
+            i {
+                font-size: 20px !important;
+            }
+            li a {
+                padding: 5px !important;
+            }
+        }
+        .policy {
+            font-size: 12px;
+            li a {
+                padding: 2px !important;
+            }
         }
         .subscribe-banner-container h6 {
             font-size: 30px !important;
         }
         .footer-logo {
-            margin-top: 50px;
-            margin-bottom: 30px !important;
-            height: 50% !important;
-            width: 50% !important;
+            height: auto !important;
+            width: 100% !important;
+            margin-top: 69px !important;
+        }
+    }
+    .category-text-wrapper {
+        h3 {
+            margin-bottom: 25px !important;
+        }
+        p {
+            margin-bottom: 25px !important;
+        }
+        .tag {
+            margin-bottom: 25px !important;
+        }
+        .read-more {
+            font-size: 18px !important;
         }
     }
     .spacer-90 {
@@ -2004,7 +2037,6 @@ input {
         width: 100%;
         padding: 0;
         width: max-content !important;
-        margin: 0 auto !important;
 
         .photo-wrapper {
             width: 340px !important;
@@ -2017,6 +2049,7 @@ input {
 
             h3 {
                 font-size: 28px;
+                margin-bottom: 50px;
             }
             p {
                 font-size: 16px;
