@@ -78,7 +78,7 @@
             <div class="column">
               <ul class="vertical dropdown menu accordion-menu align-right f-s-22" data-accordion-menu>
                 <li><br><a href="index.html">Home</a></li>
-                <li><a href="category.html">Επικοινωνία</a><br></li>
+                <li><a class="f-f-ubuntu" href="category.html">Επικοινωνία</a><br></li>
               </ul>
             </div>
             <div class="column">
@@ -119,7 +119,7 @@
           <a href="search.html" class="button search-button" type="button" data-toggle="example-dropdown-bottom-right3"><i class="fas fa-search"></i></a>
         </li>
       </ul>
-    </div>
+    </div><!-- 
     <div class="sticky-navigation-bar show-for-small-only">
       <ul class="menu">
         <li class=""><a><i class="fa fa-bars f-s-16" data-toggle="offCanvasMenu" aria-hidden="true"></i></a></li>
@@ -128,7 +128,7 @@
           <a href="search.html" class="button search-button" type="button" data-toggle="example-dropdown-bottom-right3"><i class="fas fa-search"></i></a>
         </li>
       </ul>
-    </div>
+    </div> -->
     <!-- End Sticky Navigation Menu -->
 
     <!-- Start ToTop --><!-- 
@@ -254,15 +254,13 @@
         <h3 class="category-title"><a href="category.html" class="c-black"> Category</a></h3>
       </div>
       <div class="clearfix"></div>
-      <div class="spacer-50"></div>
-      <div class="clearfix"></div>
       <div class="category-wrapper">
           <div class="photo-wrapper" data-src="https://2.bp.blogspot.com/-ErlovyvpO3o/WyGT6Vm017I/AAAAAAAAKSk/Qsoy7V4sK-kk_bkCeImrkUQIK3_X9uKjACLcBGAs/s1600/ian-dooley-347962-1240x826.jpg" style="background-image: url('https://2.bp.blogspot.com/-ErlovyvpO3o/WyGT6Vm017I/AAAAAAAAKSk/Qsoy7V4sK-kk_bkCeImrkUQIK3_X9uKjACLcBGAs/s1600/ian-dooley-347962-1240x826.jpg');"></div>
           <div class="category-text-wrapper">
               <p class="f-right tag">CATEGORY | TAG</p>
               <div class="clearfix"></div>
               <h3>Women Who Shaped Modern Photography</h3>
-              <p>Όπως επισημαίνει, αν η κυβέρνηση νοιάζεται για το μέλλον των μαθητών «να μην ψηφίσουν το νομοσχέδιο που θα μας κάνει σε λίγα...</p>
+              <p class="category-text">Όπως επισημαίνει, αν η κυβέρνηση νοιάζεται για το μέλλον των μαθητών «να μην ψηφίσουν το νομοσχέδιο που θα μας κάνει σε λίγα...</p>
               <a class="button read-more">Διάβασέ το<br><i class="fas fa-long-arrow-alt-right"></i></a>
           </div>
       </div>  <div class="clearfix"></div>
@@ -424,14 +422,14 @@
             0:{
                 lazyload:true,
                 items:1.5,
-                dots:true,
+                dots:false,
                 nav:true
             },
             600:{
                 lazyload:true,
                 items:2.2,
                 nav:true,
-                dots:true,
+                dots:true, 
             },
             1000:{
                 lazyload:true,
@@ -454,18 +452,18 @@
             }
           }
       })
-    </script>
+    </script> 
     <script>
       $('.owl-carousel-category').owlCarousel({
         loop:true,
-        margin:20,
+        margin:12,
         lazyload:true,
         responsiveClass:true,
         responsive:{
             0:{
                 lazyload:true,
                 items:1.5,
-                dots:true,
+                dots:false,
                 nav:true
             },
             600:{
@@ -474,7 +472,7 @@
                 nav:true,
                 dots:true,
             },
-            1000:{
+            1000:{ 
                 lazyload:true,
                 items:2.2,
                 nav:true,
@@ -491,7 +489,9 @@
             2000:{
                 lazyload:true,
                 items:4.4,
-                nav:false
+                nav:true,
+                dots:true,
+                loop:true
             }
           }
       })

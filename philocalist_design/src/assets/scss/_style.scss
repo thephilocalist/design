@@ -122,7 +122,7 @@
     font-size: 17px;
     color: $black;
     background-color: $menta;
-    border-radius: 25px;
+    border-radius: 21px;
     width: 280px;
     height: 60px;
     font-family: 'ubuntu';
@@ -378,6 +378,9 @@ footer {
         }
 
     }
+}
+.f-f-ubuntu {
+    font-family: 'ubuntu' !important;
 }
 .text-center {
     text-align: center !important;
@@ -971,6 +974,7 @@ margin-bottom: 10px;
     font-weight: normal !important;
     font-family: 'oregon';
     font-weight: normal !important;
+    margin-bottom: 50px;
 }
 .category-p {
     width: 1060px;
@@ -1014,16 +1018,21 @@ margin-bottom: 10px;
         h3 {
             font-size: 36px;
             font-family: 'ubuntu' !important;
+            margin-top: 25px;
+        }
+        .category-text {
+            margin-top: 25px;
         }
         .read-more {
             font-size: 17px;
             color: $black;
             background-color: #ECF4EC;
-            border-radius: 25px;
+            border-radius: 13px;
             width: 280px;
             height: 60px;
             padding: 17px;
             font-family: 'ubuntu';
+            margin-top: 50px;
         }
         .read-more:hover {
             color: $white;
@@ -1264,7 +1273,7 @@ margin-bottom: 10px;
     .offCanvasMenu-wrapper {
         display: flex;
         margin: 0 auto;
-        padding: 50px;
+        padding: 0px 50px 50px 50px;
     }
     .menu {
         position: inherit;
@@ -1483,6 +1492,9 @@ input {
 }
 /* Mobile CSS */
 @media print, screen and (max-width: 39.99875em) {
+    .carousel-title {
+        padding-left: 2px;  
+    }
     body {
         overflow-x: hidden !important;
     }
@@ -1494,6 +1506,16 @@ input {
     }
     h3 {
         font-size: 18px !important;
+    }
+    .main-article .text-wrapper .category {
+        margin-bottom: 0 !important;
+        margin-top: 6px !important;
+    }
+    .main-article .text-wrapper .date {
+        margin-top: 0px !important;
+    }
+    .owl-dots {
+        margin-top: 25px !important;
     }
     #offCanvasMenu .d-flex i {
         font-size: 24px !important;
@@ -1521,8 +1543,13 @@ input {
     .medium-article-new {
         .text-wrapper {
             height: 270px !important;
+            .category {
+                font-size: 9px !important;
+                margin-top: 5px !important;
+            }
             .title {
-                font-size: 10px !important
+                font-size: 14px !important;
+                padding-top: 2px !important;
             }
         }
     }
@@ -1562,8 +1589,8 @@ input {
                 font-size: 14px;
                 width: 164px;
                 height: 44px;
-                padding-top: 13px;
-                margin-top: 40px !important;
+                padding-top: 10px;
+                margin-top: 35px !important;
             }
             h3 {
                 margin-top: 25px !important;
@@ -1572,9 +1599,11 @@ input {
         }
     }
     .philocalist-banner-wrapper {
-        height: 210px;
+        height: 140px;
+        padding-top: 15px !important;
         .banner-logo {
             width: 128px !important;
+            margin: 0px auto 0 auto !important;
         }
     }
     .carousel-title {
@@ -1615,7 +1644,7 @@ input {
         margin: 20px auto 0 auto !important;
     }
     .search-button {
-        margin-top: 8px !important;
+        margin-top: 5px !important;
         margin-right: 18px !important;
     }
     .article-image-wrapper {
@@ -1657,17 +1686,32 @@ input {
             color: white !important;
         }
     }
+    .author-wrapper {
+        .author {
+            margin-top: 6px;
+        }
+        .author p {
+            font-size: 11px !important; 
+            span{
+                font-size: 11px !important;
+            }
+        }
+    }
+    .share .article-share-btn i {
+        font-size: 18px !important;
+    }
     .article-title-wrapper {
         padding: 25px !important;
         height: 100% !important;
+        margin-top: 60px !important;
         h1 {
-            font-size: 32px !important;
+            font-size: 30px !important;
             width: auto !important;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             padding-top: 10px !important;
         }
         p {
-            font-size: 18px;
+            font-size: 12px;
             width: auto !important;
             padding-bottom: 0px !important;
         }
@@ -1722,19 +1766,28 @@ input {
     }
     .about-title {
         font-size: 48px !important;
-        margin-top: 15px !important;
+        margin-top: 90px !important;
     }
     .tag-title {
         text-align: left !important;
         margin-bottom: 0 !important;
-        margin-top: 25px !important;
+        margin-top: 85px !important;
         a {
             font-size: 55px !important;
             line-height: 100%;
         }
     }
+    .input-group {
+        margin-top: 100px !important;
+    }
     .search-article, .search-article:focus {
         font-size: 12px !important;
+    }
+    .medium-category-article .category {
+        margin-top: 10px !important;
+    }
+    .medium-category-article .title {
+        font-size: 17px !important;
     }
     .medium-category-article .text-wrapper {
         height: auto !important;
@@ -1796,11 +1849,13 @@ input {
     }
     .carousel-title {
         text-align: left;
+        letter-spacing: 2px !important;
     }
     .article-main-text {
-        font-size: 20px !important;
+        font-size: 18px !important;
+        margin-top: -15px !important;
         p {
-            font-size: 20px !important;
+            font-size: 18px !important;
         }
         .article-tags {
             font-size: 16px !important;
@@ -1825,12 +1880,9 @@ input {
             height: 37px !important;
             width: 37px !important;
         }
-        .author p{
-            font-size: 16px !important;
-        }
         .share .article-share-btn {
-            height: 35px !important;
-            width: 51px !important;
+            height: 33px !important;
+            width: 49px !important;
             padding: 7px !important;
         }
     }
@@ -1838,24 +1890,28 @@ input {
         height: 41px !important;
         font-size: 14px !important;
         padding: 13px 0 !important;
+        width: 200px !important;
+        border-radius: 12px !important;
     }
     .category-wrapper {
         margin-bottom: 50px !important;
     }
     .category-title {
-        font-size: 69px !important;
+        font-size: 65px !important;
         padding-left: 0 !important;
         width: 100% !important;
         display: block !important;
-        line-height: 100% !important;
-        margin-top: 25px !important;
+        line-height: 55% !important;
+        margin-top: 100px !important;
+        margin-bottom: 0px !important;
+        text-align: left;
     }
     .category-p {
         font-size: 13px !important;
         padding-left: 0 !important;
         width: 100% !important;
         display: block !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 10px !important;
     }
     #offCanvasMenu {
         span {
@@ -1866,6 +1922,9 @@ input {
             padding: 0 10px 0 0;
             width: 100% !important;
         }
+    }
+    .medium-article .category {
+        margin-top: 10px !important;
     }
     footer {
         padding: 0 !important;
@@ -1879,13 +1938,18 @@ input {
         }
         .subscribe-banner-container {
             h6 {
-                margin-top: 50px !important;
-                font-size: 20px !important;
+                margin-top: 30px !important;
+                font-size: 21px !important;
+                margin-bottom: 0 !important;
             }
             p {
                 font-size: 10px !important;
                 margin-bottom: 25px !important;
             }
+        }
+        .rights {
+            font-size: 7px !important;
+            letter-spacing: 1px;
         }
         .footer-logo {
             margin-top: 50px;
@@ -1899,7 +1963,7 @@ input {
         font-size: 11px !important;
     }
     .date {
-        font-size: 9px !important;
+        font-size: 13px !important;
     }
 
     .subscribe-banner-container {
@@ -1920,6 +1984,7 @@ input {
                 font-size: 10px !important;
                 width: 57px !important;
                 height: 25px !important;
+                padding: 7px !important;
             }
             .form-placeholder {
                 width: 156px !important;
@@ -1927,7 +1992,6 @@ input {
                 height: 25px !important;
             }
         }
-    
         .newsletter-button {
             background-color: #cfe2cf;
             color: $white;
@@ -1947,8 +2011,51 @@ input {
         }
     
     }
+    .policy li a {
+        font-size: 9px !important;
+    }
+    .policy li a:first-child {
+        padding-right: 5px;
+    }
+    .policy li a:last-child {
+        padding-left: 5px;
+    }
+    .navigation-bar {
+        position: fixed !important;
+        top: 0 !important;
+        width: 100%;
+        z-index: 99999999999999999;
+        .fas {
+            font-size: 20px !important;
+        }
+        .search-button {
+            padding-top: 13px !important;
+            margin-right: 15px !important;
+        }
+    }
+    .main-photo-wrapper {
+        margin-top: 60px !important
+    }
+    .about-text {
+        margin-top: 5px;
+        font-family: 'ubuntu';
+        p {
+            font-size: 18px !important;
+        }
+    }
+    .vertical.dropdown.menu.accordion-menu.align-left.f-s-30 {
+        a {
+            padding-bottom: 0;
+            font-size: 30px !important;
+        }
+    }
+    .vertical.dropdown.menu.accordion-menu.align-right.f-s-22 {
+        a {
+            padding-bottom: 0;
+            font-size: 22px !important;
+        }
+    }
 }
-
 /* Medium  CSS*/
 @media screen and (min-width: 39.9988em) and (max-width:1199px){
     /* body {
@@ -1956,7 +2063,7 @@ input {
     } */
     .category-title, .category-p {
         width: auto !important;
-        margin-left: 50px !important;
+        margin-left: 10px !important;
     }
     .spacer-150 {
         margin-bottom: 50px !important;
@@ -1964,8 +2071,21 @@ input {
     .article-title-wrapper h1, .article-title-wrapper p {
         width: 80%;
     }
+    .article-title-wrapper h1 {
+        font-size: 69px !important;
+    }
+    .article-title-wrapper p {
+        margin-top: 35px !important;
+    }
     .w-60 {
         width: 80% !important;
+    }
+    .nav-logo {
+        margin-right: 50px !important;
+    }
+    .p-20-for-medium {
+        padding: 0 20px !important;
+        margin-top: -15px;
     }
     footer {
         padding-left: 0 !important;
@@ -1985,6 +2105,7 @@ input {
             }
         }
         .footer-social {
+            margin-top: 78px;
             i {
                 font-size: 20px !important;
             }
@@ -2000,25 +2121,28 @@ input {
         }
         .subscribe-banner-container h6 {
             font-size: 30px !important;
+            line-height: 100%;
         }
         .footer-logo {
             height: auto !important;
             width: 100% !important;
-            margin-top: 69px !important;
+            margin-top: 135px !important;
         }
     }
     .category-text-wrapper {
         h3 {
-            margin-bottom: 25px !important;
-        }
-        p {
-            margin-bottom: 25px !important;
+            margin-bottom: 15px !important;
         }
         .tag {
-            margin-bottom: 25px !important;
+            font-size: 15px !important;
+            margin-bottom: 15px !important;
+        }
+        .category-text {
+            margin-bottom: 15px !important;
         }
         .read-more {
             font-size: 18px !important;
+            margin-top: 15px !important;
         }
     }
     .spacer-90 {
@@ -2046,11 +2170,11 @@ input {
         width: max-content !important;
 
         .photo-wrapper {
-            width: 340px !important;
+            width: 380px !important;
             height: 400px !important;
         }
         .category-text-wrapper {
-            width: 340px !important;
+            width: 380px !important;
             height: 400px !important;
             padding: 25px;
 
