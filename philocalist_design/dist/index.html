@@ -146,7 +146,7 @@
     
     <!-- Start Main Article Carousel -->
     <p class="carousel-title">FEATURED ARTICLES</p>
-    <div class="owl-carousel owl-theme">
+    <div class="owl-carousel owl-theme owl-carousel-featured"> 
       <div> <div class="main-article">
         <a href="article.html" class="h_442 main-article-box" data-src="https://2.bp.blogspot.com/-ErlovyvpO3o/WyGT6Vm017I/AAAAAAAAKSk/Qsoy7V4sK-kk_bkCeImrkUQIK3_X9uKjACLcBGAs/s1600/ian-dooley-347962-1240x826.jpg" style="background-image: url('https://2.bp.blogspot.com/-ErlovyvpO3o/WyGT6Vm017I/AAAAAAAAKSk/Qsoy7V4sK-kk_bkCeImrkUQIK3_X9uKjACLcBGAs/s1600/ian-dooley-347962-1240x826.jpg');">
             <div class="overlay">
@@ -415,7 +415,7 @@
     <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
     
     <script>
-      $('.owl-carousel').owlCarousel({
+      $('.owl-carousel-featured').owlCarousel({
         loop:true,
         margin:20,
         lazyload:true,
@@ -443,6 +443,47 @@
             1200:{
                 lazyload:true,
                 items:3.3,
+                nav:true,
+                dots:true,
+                loop:true
+            },
+            2000:{
+                lazyload:true,
+                items:4.4,
+                nav:false
+            }
+          }
+      })
+    </script>
+    <script>
+      $('.owl-carousel-category').owlCarousel({
+        loop:true,
+        margin:20,
+        lazyload:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                lazyload:true,
+                items:1.5,
+                dots:true,
+                nav:true
+            },
+            600:{
+                lazyload:true,
+                items:2.2,
+                nav:true,
+                dots:true,
+            },
+            1000:{
+                lazyload:true,
+                items:2.2,
+                nav:true,
+                dots:true,
+                loop:true
+            },
+            1200:{
+                lazyload:true,
+                items:4.3,
                 nav:true,
                 dots:true,
                 loop:true
